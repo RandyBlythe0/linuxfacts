@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>linuxfacts.com</title>
+    <meta name="description" content="Discover interesting facts about Linux." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="hero">
+        <p class="eyebrow">linuxfacts.com</p>
+        <h1>Linux facts, one at a time</h1>
+        <p class="subtitle">A simple website and API for interesting Linux trivia and history.</p>
+      </header>
+
+      <section class="card" aria-live="polite">
+        <div class="card-header">
+          <span id="fact-category" class="badge">loading</span>
+          <span id="fact-id" class="fact-id"></span>
+        </div>
+        <p id="fact-text" class="fact-text">Fetching a Linux fact...</p>
+        <p id="fact-meta" class="fact-meta" hidden></p>
+        <p id="fact-source" class="fact-source" hidden></p>
+        <p id="fact-error" class="error" hidden></p>
+        <div class="actions">
+          <button id="new-fact" type="button">Show another fact</button>
+          <button id="load-all" type="button" class="secondary">Load all facts</button>
+        </div>
+      </section>
+
+      <section id="all-facts" class="all-facts" hidden>
+        <h2>All facts</h2>
+        <ul id="facts-list"></ul>
+      </section>
+
+      <footer class="footer">
+        <p>API: <code id="api-base"></code></p>
+      </footer>
+    </main>
+
+    <script src="./src/config.js"></script>
+    <script src="./src/main.js"></script>
+  </body>
+</html>

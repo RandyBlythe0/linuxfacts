@@ -1,0 +1,1402 @@
+[
+{
+"id": 1,
+"fact": "Linus Torvalds began developing the Linux kernel in 1991 while he was a student at the University of Helsinki.",
+"category": "history",
+"status": "verified",
+"source": "https://www.cs.helsinki.fi/u/kerola/kj2/OS3e_20.pdf"
+},
+{
+"id": 2,
+"fact": "The Linux kernel is written primarily in C, with architecture-specific assembly and other supporting languages and tools.",
+"category": "kernel",
+"status": "verified",
+"source": "https://www.kernel.org/doc/html/latest/process/programming-language.html"
+},
+{
+"id": 3,
+"fact": "Tux was created as the Linux penguin mascot artwork by Larry Ewing. The story that Linus Torvalds was bitten by a penguin is an anecdote, not a proven explanation for the mascot choice.",
+"category": "culture",
+"status": "corrected",
+"source": "https://www.wired.com/2001/03/the-story-behind-tux-the-penguin/"
+},
+{
+"id": 4,
+"fact": "All 500 systems in the June 2026 TOP500 list were classified in the Linux operating-system family.",
+"category": "adoption",
+"status": "verified_current_as_of_2026_06",
+"source": "https://www.top500.org/statistics/details/osfam/1/"
+},
+{
+"id": 5,
+"fact": "The first Linux kernel release, version 0.01, dates to September 1991.",
+"category": "history",
+"status": "verified",
+"source": "https://www.cs.helsinki.fi/u/kerola/kj2/OS3e_20.pdf"
+},
+{
+"id": 6,
+"fact": "Linux is technically the kernel; a Linux distribution combines the kernel with user-space tools, libraries, applications and package-management choices.",
+"category": "basics",
+"status": "verified",
+"source": "https://www.kernel.org/"
+},
+{
+"id": 7,
+"fact": "The name Linux is commonly explained as a blend of Linus and Unix, although the naming history is more nuanced: Linus initially used the name Freax, and the name Linux became established through the project's early hosting arrangements.",
+"category": "history",
+"status": "qualified",
+"source": "https://www.cs.helsinki.fi/u/kerola/kj2/OS3e_20.pdf"
+},
+{
+"id": 8,
+"fact": "Android is built on the Linux kernel, which provides core services such as threading and low-level memory management.",
+"category": "adoption",
+"status": "verified",
+"source": "https://developer.android.com/guide/platform"
+},
+{
+"id": 9,
+"fact": "The /proc filesystem is a virtual interface to information about running processes and kernel data; it is not an ordinary disk directory.",
+"category": "filesystem",
+"status": "verified",
+"source": "https://docs.kernel.org/filesystems/proc.html"
+},
+{
+"id": 10,
+"fact": "Linux is widely used in cloud servers, containers and embedded devices.",
+"category": "adoption",
+"status": "verified_general",
+"source": "https://www.kernel.org/"
+},
+{
+"id": 11,
+"fact": "The /sys filesystem (sysfs) exposes information about kernel objects and the device model to user space.",
+"category": "filesystem",
+"status": "verified",
+"source": "https://www.kernel.org/doc/html/latest/driver-api/driver-model/overview.html"
+},
+{
+"id": 12,
+"fact": "Linux network namespaces can isolate network devices, protocol stacks, routing tables, firewall rules and port-number spaces.",
+"category": "networking",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/network_namespaces.7.html"
+},
+{
+"id": 13,
+"fact": "Linux namespaces make global resources appear isolated to processes inside a namespace; containers use namespaces as one of their building blocks.",
+"category": "containers",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/namespaces.7.html"
+},
+{
+"id": 14,
+"fact": "Linux control groups (cgroups) organize processes into hierarchies and provide interfaces for managing and accounting for resource use.",
+"category": "containers",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/cgroup-v2.html"
+},
+{
+"id": 15,
+"fact": "eBPF lets programs run in a constrained environment in the Linux kernel for tasks such as tracing, networking and security instrumentation, without changing kernel source code or loading a kernel module.",
+"category": "kernel",
+"status": "verified",
+"source": "https://docs.kernel.org/userspace-api/ebpf/index.html"
+},
+{
+"id": 16,
+"fact": "Linux capabilities split traditional superuser privileges into smaller permissions, such as CAP_NET_ADMIN and CAP_SYS_MODULE.",
+"category": "security",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/capabilities.7.html"
+},
+{
+"id": 17,
+"fact": "The Linux Security Module framework provides hooks used by security systems such as SELinux and AppArmor.",
+"category": "security",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/LSM/index.html"
+},
+{
+"id": 18,
+"fact": "The ext4 filesystem uses a journal to help protect filesystem metadata from inconsistencies after a crash.",
+"category": "filesystem",
+"status": "verified",
+"source": "https://docs.kernel.org/filesystems/ext4/journal.html"
+},
+{
+"id": 19,
+"fact": "In ext4's default data=ordered mode, metadata is journaled and associated data blocks are written before the metadata transaction is committed; ordinary file data is not fully journaled by default.",
+"category": "filesystem",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/ext4.html"
+},
+{
+"id": 20,
+"fact": "Linux initramfs is an early userspace archive unpacked during boot; its /init program can locate and mount the real root filesystem.",
+"category": "boot",
+"status": "verified",
+"source": "https://docs.kernel.org/filesystems/ramfs-rootfs-initramfs.html"
+},
+{
+"id": 21,
+"fact": "GNU GRUB is a bootloader: it helps load an operating system kernel, but it is not the Linux kernel itself.",
+"category": "boot",
+"status": "verified",
+"source": "https://www.gnu.org/software/grub/manual/grub/grub.html"
+},
+{
+"id": 22,
+"fact": "The Linux kernel supports multiple preemption models; the available choices depend on kernel configuration and architecture.",
+"category": "kernel",
+"status": "verified",
+"source": "https://docs.kernel.org/scheduler/sched-preemption.html"
+},
+{
+"id": 23,
+"fact": "Linux's epoll API lets an application monitor many file descriptors for I/O readiness, using edge-triggered or level-triggered notification.",
+"category": "programming",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/epoll.7.html"
+},
+{
+"id": 24,
+"fact": "On Linux, fork() uses copy-on-write memory pages, so parent and child initially share physical pages until a write requires a copy.",
+"category": "processes",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man2/fork.2.html"
+},
+{
+"id": 25,
+"fact": "The /proc/self path refers to the process accessing it, making it a convenient way for a process to inspect its own proc information.",
+"category": "filesystem",
+"status": "verified",
+"source": "https://docs.kernel.org/filesystems/proc.html"
+},
+{
+"id": 26,
+"fact": "Linux exposes kernel boot parameters through /proc/cmdline on systems where procfs is mounted.",
+"category": "boot",
+"status": "verified",
+"source": "https://docs.kernel.org/filesystems/proc.html"
+},
+{
+"id": 27,
+"fact": "The /proc/PID/fd directory contains symbolic links representing the file descriptors opened by a process.",
+"category": "processes",
+"status": "verified",
+"source": "https://docs.kernel.org/filesystems/proc.html"
+},
+{
+"id": 28,
+"fact": "The /proc/PID/maps file reports a process's mapped memory regions, including address ranges and permissions.",
+"category": "memory",
+"status": "verified",
+"source": "https://docs.kernel.org/filesystems/proc.html"
+},
+{
+"id": 29,
+"fact": "The Linux kernel provides the virtual filesystem layer (VFS), allowing user space to work with different filesystem implementations through common interfaces.",
+"category": "filesystem",
+"status": "verified",
+"source": "https://docs.kernel.org/filesystems/"
+},
+{
+"id": 30,
+"fact": "A Linux system can mount filesystems at different points in one directory tree; separate filesystems do not need separate drive-letter namespaces.",
+"category": "filesystem",
+"status": "verified_general",
+"source": "https://docs.kernel.org/filesystems/"
+},
+{
+"id": 31,
+"fact": "Linux supports loadable kernel modules, allowing supported kernel functionality such as drivers to be loaded or unloaded without rebuilding the entire kernel.",
+"category": "kernel",
+"status": "verified_general",
+"source": "https://man7.org/linux/man-pages/man8/modprobe.8.html"
+},
+{
+"id": 32,
+"fact": "The dmesg command reads the kernel ring buffer, which commonly contains kernel and driver messages.",
+"category": "troubleshooting",
+"status": "verified_general",
+"source": "https://man7.org/linux/man-pages/man1/dmesg.1.html"
+},
+{
+"id": 33,
+"fact": "The uname command can report kernel-related system information, including the kernel release and machine architecture.",
+"category": "commands",
+"status": "verified_general",
+"source": "https://man7.org/linux/man-pages/man1/uname.1.html"
+},
+{
+"id": 34,
+"fact": "Linux process IDs (PIDs) identify processes within a PID namespace; PID namespaces allow containers to have their own PID numbering view.",
+"category": "processes",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/pid_namespaces.7.html"
+},
+{
+"id": 35,
+"fact": "Linux mount namespaces let processes have different views of the system's mount points.",
+"category": "containers",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/mount_namespaces.7.html"
+},
+{
+"id": 36,
+"fact": "Linux user namespaces allow processes to have different user and group ID mappings inside and outside the namespace.",
+"category": "security",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/user_namespaces.7.html"
+},
+{
+"id": 37,
+"fact": "Linux UTS namespaces isolate hostname and NIS domain-name identifiers.",
+"category": "containers",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/uts_namespaces.7.html"
+},
+{
+"id": 38,
+"fact": "Linux IPC namespaces isolate interprocess-communication resources such as System V IPC objects and POSIX message queues.",
+"category": "containers",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/ipc_namespaces.7.html"
+},
+{
+"id": 39,
+"fact": "A network interface can belong to one network namespace at a time; virtual Ethernet pairs can connect network namespaces.",
+"category": "networking",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/network_namespaces.7.html"
+},
+{
+"id": 40,
+"fact": "Linux supports seccomp filters, which can restrict the system calls a process is allowed to make.",
+"category": "security",
+"status": "verified_general",
+"source": "https://man7.org/linux/man-pages/man2/seccomp.2.html"
+},
+{
+"id": 41,
+"fact": "The CAP_NET_BIND_SERVICE capability allows a process to bind Internet-domain sockets to privileged ports below 1024.",
+"category": "security",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/capabilities.7.html"
+},
+{
+"id": 42,
+"fact": "The CAP_SYS_MODULE capability controls loading and unloading kernel modules.",
+"category": "security",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/capabilities.7.html"
+},
+{
+"id": 43,
+"fact": "The Linux kernel's /dev interface contains device nodes through which user-space programs can access device drivers.",
+"category": "devices",
+"status": "verified_general",
+"source": "https://docs.kernel.org/driver-api/"
+},
+{
+"id": 44,
+"fact": "Linux supports many processor architectures; the kernel source tree contains architecture-specific code under arch/.",
+"category": "kernel",
+"status": "verified_general",
+"source": "https://github.com/torvalds/linux/tree/master/arch"
+},
+{
+"id": 45,
+"fact": "The Linux kernel has a scheduler that chooses which runnable task gets CPU time; scheduling behavior is affected by policy and priority.",
+"category": "processes",
+"status": "verified_general",
+"source": "https://docs.kernel.org/scheduler/"
+},
+{
+"id": 46,
+"fact": "Linux provides real-time scheduling policies in addition to its normal scheduling policy classes.",
+"category": "processes",
+"status": "verified_general",
+"source": "https://man7.org/linux/man-pages/man7/sched.7.html"
+},
+{
+"id": 47,
+"fact": "The Linux kernel exports many tunable parameters through sysctl interfaces, commonly exposed under /proc/sys.",
+"category": "kernel",
+"status": "verified",
+"source": "https://docs.kernel.org/filesystems/proc.html"
+},
+{
+"id": 48,
+"fact": "The Linux kernel's /proc/interrupts file reports interrupt counts by CPU and interrupt source.",
+"category": "hardware",
+"status": "verified_general",
+"source": "https://docs.kernel.org/filesystems/proc.html"
+},
+{
+"id": 49,
+"fact": "The /proc/meminfo file reports memory statistics maintained by the Linux kernel.",
+"category": "memory",
+"status": "verified",
+"source": "https://docs.kernel.org/filesystems/proc.html"
+},
+{
+"id": 50,
+"fact": "The /proc/uptime file reports how long the system has been running and the amount of time spent idle.",
+"category": "system",
+"status": "verified_general",
+"source": "https://docs.kernel.org/filesystems/proc.html"
+},
+{
+"id": 51,
+"fact": "Linux supports kernel tracing and performance tools such as ftrace and perf for observing kernel and system behavior.",
+"category": "debugging",
+"status": "verified_general",
+"source": "https://docs.kernel.org/trace/ftrace.html"
+},
+{
+"id": 52,
+"fact": "eBPF programs can attach to networking and tracing-related kernel hooks, making eBPF useful for observability and performance analysis.",
+"category": "observability",
+"status": "verified",
+"source": "https://docs.kernel.org/userspace-api/ebpf/index.html"
+},
+{
+"id": 53,
+"fact": "Linux supports multiple filesystem types, including ext4, XFS and Btrfs; the choice depends on workload and required features.",
+"category": "filesystem",
+"status": "verified_general",
+"source": "https://docs.kernel.org/filesystems/"
+},
+{
+"id": 54,
+"fact": "Linux's kernel command line can be used to pass parameters to the kernel and, depending on the parameter, to built-in components or early userspace.",
+"category": "boot",
+"status": "verified_general",
+"source": "https://docs.kernel.org/admin-guide/kernel-parameters.html"
+},
+{
+"id": 55,
+"fact": "The kernel's init process is the first user-space process started during a normal Linux boot and is assigned PID 1 in the initial PID namespace.",
+"category": "boot",
+"status": "verified",
+"source": "https://docs.kernel.org/filesystems/ramfs-rootfs-initramfs.html"
+},
+{
+"id": 56,
+"fact": "Linux can use a virtual memory mechanism called swap, which provides backing storage for memory pages that are not currently kept in RAM.",
+"category": "memory",
+"status": "verified_general",
+"source": "https://man7.org/linux/man-pages/man8/swapon.8.html"
+},
+{
+"id": 57,
+"fact": "Linux supports hard links: multiple directory entries can refer to the same inode on a filesystem that supports them.",
+"category": "filesystem",
+"status": "verified_general",
+"source": "https://man7.org/linux/man-pages/man2/link.2.html"
+},
+{
+"id": 58,
+"fact": "On Linux, pipes provide a unidirectional byte stream that allows processes to pass data to one another.",
+"category": "processes",
+"status": "verified_general",
+"source": "https://man7.org/linux/man-pages/man7/pipe.7.html"
+},
+{
+"id": 59,
+"fact": "Linux signals provide a mechanism for notifying processes that an event has occurred; signals include SIGTERM, SIGKILL and SIGCHLD.",
+"category": "processes",
+"status": "verified_general",
+"source": "https://man7.org/linux/man-pages/man7/signal.7.html"
+},
+{
+"id": 60,
+"fact": "The Linux kernel can expose device and kernel-object relationships through sysfs, usually mounted at /sys.",
+"category": "devices",
+"status": "verified",
+"source": "https://www.kernel.org/doc/html/latest/driver-api/driver-model/overview.html"
+},
+{
+"id": 61,
+"fact": "io_uring is an asynchronous I/O interface introduced in Linux 5.1 that uses shared memory submission and completion rings to reduce syscall overhead.",
+"category": "kernel",
+"status": "verified",
+"source": "https://kernel.dk/io_uring.pdf"
+},
+{
+"id": 62,
+"fact": "The Linux Out-Of-Memory (OOM) killer selects and terminates processes when the system runs critically low on physical memory and swap.",
+"category": "memory",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/mm/concepts.html"
+},
+{
+"id": 63,
+"fact": "Linux transparent hugepages (THP) allow the kernel to automatically allocate 2MB or larger memory pages to reduce TLB misses.",
+"category": "memory",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/mm/transhuge.html"
+},
+{
+"id": 64,
+"fact": "The Completely Fair Scheduler (CFS) served as the default Linux desktop/server task scheduler from kernel 2.6.23 until it was replaced by EEVDF in kernel 6.6.",
+"category": "kernel",
+"status": "verified",
+"source": "https://docs.kernel.org/scheduler/sched-design-CFS.html"
+},
+{
+"id": 65,
+"fact": "EEVDF (Earliest Eligible Virtual Deadline First) replaced CFS in Linux 6.6 to improve latency responsiveness for interactive workloads.",
+"category": "kernel",
+"status": "verified",
+"source": "https://lwn.net/Articles/925371/"
+},
+{
+"id": 66,
+"fact": "The /dev/null device discards all data written to it while returning an end-of-file (EOF) status on read attempts.",
+"category": "devices",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man4/null.4.html"
+},
+{
+"id": 67,
+"fact": "The /dev/zero character device supplies an endless stream of null bytes (0x00) to any process reading from it.",
+"category": "devices",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man4/zero.4.html"
+},
+{
+"id": 68,
+"fact": "/dev/urandom generates non-blocking pseudorandom numbers derived from the kernel entropy pool without blocking when entropy is low.",
+"category": "security",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man4/urandom.4.html"
+},
+{
+"id": 69,
+"fact": "Since Linux 5.6, /dev/random and /dev/urandom behave identically under normal conditions after the initial entropy seed is established.",
+"category": "security",
+"status": "verified",
+"source": "https://lwn.net/Articles/808540/"
+},
+{
+"id": 70,
+"fact": "The Linux vDSO (virtual dynamic shared object) exports kernel space functions to user space to allow fast syscalls like gettimeofday without context switching.",
+"category": "kernel",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/vdso.7.html"
+},
+{
+"id": 71,
+"fact": "OverlayFS is a union filesystem for Linux that allows two directory trees to be combined into one, forming the foundation of Docker image layers.",
+"category": "filesystem",
+"status": "verified",
+"source": "https://docs.kernel.org/filesystems/overlayfs.html"
+},
+{
+"id": 72,
+"fact": "In Linux file permissions, the SUID bit on an executable causes the program to execute with the file owner's privileges instead of the calling user's privileges.",
+"category": "security",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man2/chmod.2.html"
+},
+{
+"id": 73,
+"fact": "The Sticky Bit on a Linux directory ensures that files within that directory can only be deleted or renamed by their respective owners or root.",
+"category": "filesystem",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man1/chmod.1.html"
+},
+{
+"id": 74,
+"fact": "Linux netfilter is the underlying framework inside the kernel that provides packet filtering, NAT, and packet mangling used by iptables and nftables.",
+"category": "networking",
+"status": "verified",
+"source": "https://www.netfilter.org/documentation/"
+},
+{
+"id": 75,
+"fact": "nftables is the modern successor to iptables, offering a unified user-space utility and simpler kernel packet evaluation syntax.",
+"category": "networking",
+"status": "verified",
+"source": "https://wiki.nftables.org/"
+},
+{
+"id": 76,
+"fact": "The Linux kernel uses swapiness (vm.swappiness) to balance between swapping out anonymous memory pages and dropping filesystem page cache.",
+"category": "memory",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/sysctl/vm.html"
+},
+{
+"id": 77,
+"fact": "KVM (Kernel-based Virtual Machine) converts the Linux kernel into a bare-metal hypervisor via hardware virtualization extensions (Intel VT-x / AMD-V).",
+"category": "virtualization",
+"status": "verified",
+"source": "https://www.linux-kvm.org/"
+},
+{
+"id": 78,
+"fact": "Zram creates compressed block devices inside RAM that act as ultra-fast swap devices or temporary storage.",
+"category": "memory",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/blockdev/zram.html"
+},
+{
+"id": 79,
+"fact": "Systemd is an init system and system manager that uses socket activation and parallel service execution to speed up Linux boot times.",
+"category": "boot",
+"status": "verified",
+"source": "https://systemd.io/"
+},
+{
+"id": 80,
+"fact": "The /etc/fstab file defines static information regarding filesystems, mount points, and mount options processed during system boot.",
+"category": "filesystem",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man5/fstab.5.html"
+},
+{
+"id": 81,
+"fact": "udev is the dynamic device manager for the Linux kernel, responsible for creating nodes in /dev when hardware is connected or disconnected.",
+"category": "devices",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/udev.7.html"
+},
+{
+"id": 82,
+"fact": "Linux signals SIGKILL (9) and SIGSTOP (19) cannot be caught, blocked, or ignored by standard process code.",
+"category": "processes",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/signal.7.html"
+},
+{
+"id": 83,
+"fact": "A zombie process in Linux has completed execution via exit() but retains an entry in the process table until its parent reads its exit status via wait().",
+"category": "processes",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man2/wait.2.html"
+},
+{
+"id": 84,
+"fact": "An orphan process is a Linux process whose parent has finished or died; orphan processes are automatically adopted by PID 1 (init/systemd).",
+"category": "processes",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man2/getppid.2.html"
+},
+{
+"id": 85,
+"fact": "Btrfs (B-tree FS) is a copy-on-write filesystem for Linux that supports built-in RAID, dynamic volume management, and instant snapshotting.",
+"category": "filesystem",
+"status": "verified",
+"source": "https://btrfs.readthedocs.io/"
+},
+{
+"id": 86,
+"fact": "XFS is a high-performance 64-bit journaling filesystem developed by SGI and now widely used as default storage on enterprise Linux distributions.",
+"category": "filesystem",
+"status": "verified",
+"source": "https://git.kernel.org/pub/scm/fs/xfs/xfs-documentation.git"
+},
+{
+"id": 87,
+"fact": "Linux memory overcommit allows the kernel to allocate more virtual memory to processes than physical RAM and swap combined.",
+"category": "memory",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/mm/concepts.html"
+},
+{
+"id": 88,
+"fact": "The Linux kernel source code repository migrated to Git in 2005 after Linus Torvalds created Git specifically for kernel development.",
+"category": "history",
+"status": "verified",
+"source": "https://git-scm.com/book/en/v2/Getting-Started-A-Short-History-of-Git"
+},
+{
+"id": 89,
+"fact": "The /proc/sys/vm/drop_caches interface allows administrators to manually liberate page cache, dentries, and inodes from physical RAM.",
+"category": "troubleshooting",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/sysctl/vm.html"
+},
+{
+"id": 90,
+"fact": "Linux sysrq key shortcuts allow emergency low-level commands to be sent directly to the kernel, even during total system freezes.",
+"category": "troubleshooting",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/sysrq.html"
+},
+{
+"id": 91,
+"fact": "The REISUB magic sysrq sequence safely unmounts filesystems, syncs data, and restarts a frozen Linux machine.",
+"category": "troubleshooting",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/sysrq.html"
+},
+{
+"id": 92,
+"fact": "WireGuard is an extremely lightweight VPN protocol integrated directly into the Linux kernel starting with version 5.6.",
+"category": "networking",
+"status": "verified",
+"source": "https://www.wireguard.com/"
+},
+{
+"id": 93,
+"fact": "Linux uses Address Space Layout Randomization (ASLR) to randomize memory address locations of key data areas to prevent buffer overflow attacks.",
+"category": "security",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/random.7.html"
+},
+{
+"id": 94,
+"fact": "SELinux was originally developed by the United States National Security Agency (NSA) and released to the open-source community under GPL.",
+"category": "security",
+"status": "verified",
+"source": "https://github.com/SELinuxProject/selinux"
+},
+{
+"id": 95,
+"fact": "AppArmor relies on pathnames to enforce access rules, whereas SELinux relies on security labels (inodes and contexts).",
+"category": "security",
+"status": "verified",
+"source": "https://gitlab.com/apparmor/apparmor/-/wikis/home"
+},
+{
+"id": 96,
+"fact": "The Linux command 'strace' intercepts and records system calls made by a process and the signals received by that process.",
+"category": "debugging",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man1/strace.1.html"
+},
+{
+"id": 97,
+"fact": "The Linux command 'lsof' lists information about files opened by processes, including disk files, named pipes, network sockets, and devices.",
+"category": "debugging",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man8/lsof.8.html"
+},
+{
+"id": 98,
+"fact": "The /proc/cpuinfo virtual file exposes detailed CPU flags, architecture information, core counts, and CPU vendor identifiers.",
+"category": "hardware",
+"status": "verified",
+"source": "https://docs.kernel.org/filesystems/proc.html"
+},
+{
+"id": 99,
+"fact": "Linux supports Control Groups version 2 (cgroups v2), which unifies resource hierarchies under a single tree layout.",
+"category": "containers",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/cgroup-v2.html"
+},
+{
+"id": 100,
+"fact": "Rust support was officially merged into the Linux kernel starting with Linux release 6.1.",
+"category": "kernel",
+"status": "verified",
+"source": "https://docs.kernel.org/rust/index.html"
+},
+{
+"id": 101,
+"fact": "Soft lockup kernel panics occur when a CPU task spends more than 20 seconds executing in kernel space without letting other tasks run.",
+"category": "troubleshooting",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/lockup-watchdogs.html"
+},
+{
+"id": 102,
+"fact": "Hard lockup kernel panics occur when a CPU fails to service local periodic timer interrupts for a prolonged period.",
+"category": "troubleshooting",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/lockup-watchdogs.html"
+},
+{
+"id": 103,
+"fact": "Linux uses POSIX Realtime Extensions to provide realtime priorities ranging from 1 to 99 under SCHED_FIFO and SCHED_RR.",
+"category": "processes",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/sched.7.html"
+},
+{
+"id": 104,
+"fact": "The Linux kernel SCHED_DEADLINE policy implements the Earliest Deadline First (EDF) algorithm for hard real-time tasks.",
+"category": "processes",
+"status": "verified",
+"source": "https://docs.kernel.org/scheduler/sched-deadline.html"
+},
+{
+"id": 105,
+"fact": "In Linux, symbolic links can span different filesystems, whereas hard links must exist on the same physical filesystem.",
+"category": "filesystem",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/symlink.7.html"
+},
+{
+"id": 106,
+"fact": "Linux page cache utilizes free RAM to store frequently accessed disk blocks, automatically freeing memory when applications require physical RAM.",
+"category": "memory",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/mm/concepts.html"
+},
+{
+"id": 107,
+"fact": "The Linux 'nice' value adjusts a process priority level ranging from -20 (highest priority) to 19 (lowest priority).",
+"category": "processes",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man2/nice.2.html"
+},
+{
+"id": 108,
+"fact": "Linux supports Kernel Samepage Merging (KSM), allowing hypervisors to scan memory and merge identical memory pages into shared copy-on-write pages.",
+"category": "virtualization",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/mm/ksm.html"
+},
+{
+"id": 109,
+"fact": "The Linux kernel utilizes a pseudo-filesystem named debugfs to expose debugging and profiling data to developers.",
+"category": "debugging",
+"status": "verified",
+"source": "https://docs.kernel.org/filesystems/debugfs.html"
+},
+{
+"id": 110,
+"fact": "The kernel config file (.config) stores all feature flags, driver options, and architecture configurations chosen during kernel compilation.",
+"category": "kernel",
+"status": "verified",
+"source": "https://docs.kernel.org/kbuild/kconfig.html"
+},
+{
+"id": 111,
+"fact": "Linux support for unified memory architecture (UMA) and Non-Uniform Memory Access (NUMA) ensures efficient multi-socket CPU memory balancing.",
+"category": "memory",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/mm/numaperf.html"
+},
+{
+"id": 112,
+"fact": "Linux network interface bonding allows combining multiple physical network interfaces into a single virtual interface for redundancy or throughput.",
+"category": "networking",
+"status": "verified",
+"source": "https://docs.kernel.org/networking/bonding.html"
+},
+{
+"id": 113,
+"fact": "The Linux Kernel Module loading utility 'modprobe' automatically resolves and loads module dependencies, unlike low-level 'insmod'.",
+"category": "kernel",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man8/modprobe.8.html"
+},
+{
+"id": 114,
+"fact": "The Linux environment variable PATH specifies a list of directories searched sequentially to locate command binaries.",
+"category": "basics",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man1/bash.1.html"
+},
+{
+"id": 115,
+"fact": "GNU C Library (glibc) provides standard system calls and core wrapper functions used by most Linux userland applications.",
+"category": "basics",
+"status": "verified",
+"source": "https://www.gnu.org/software/libc/"
+},
+{
+"id": 116,
+"fact": "musl is an alternative lightweight standard C library for Linux often used in minimal container environments like Alpine Linux.",
+"category": "basics",
+"status": "verified",
+"source": "https://musl.libc.org/"
+},
+{
+"id": 117,
+"fact": "Linux iptables features five default built-in tables: raw, filter, nat, mangle, and security.",
+"category": "security",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man8/iptables.8.html"
+},
+{
+"id": 118,
+"fact": "The Linux kernel uses extended attributes (xattrs) to store arbitrary key-value metadata alongside files and directories.",
+"category": "filesystem",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/xattr.7.html"
+},
+{
+"id": 119,
+"fact": "LUKS (Linux Unified Key Setup) is the standard platform-independent disk encryption format used by dm-crypt.",
+"category": "security",
+"status": "verified",
+"source": "https://gitlab.com/cryptsetup/cryptsetup"
+},
+{
+"id": 120,
+"fact": "Linux devtmpfs mounts a virtual filesystem at /dev during early boot, presenting device nodes managed by the kernel core.",
+"category": "devices",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/devices.html"
+},
+{
+"id": 121,
+"fact": "The Linux kernel uses the RCU (Read-Copy Update) synchronization mechanism to allow lockless read operations alongside concurrent writes.",
+"category": "kernel",
+"status": "verified",
+"source": "https://docs.kernel.org/RCU/rcu.html"
+},
+{
+"id": 122,
+"fact": "The chroot system call changes the apparent root directory for the current running process and its child processes.",
+"category": "security",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man2/chroot.2.html"
+},
+{
+"id": 123,
+"fact": "Systemd journals capture structured log messages from kernel space, early boot initramfs, and standard userspace services.",
+"category": "boot",
+"status": "verified",
+"source": "https://systemd.io/"
+},
+{
+"id": 124,
+"fact": "Linux tmpfs stores files in virtual memory using RAM and swap, providing high-speed storage that clears upon reboot.",
+"category": "filesystem",
+"status": "verified",
+"source": "https://docs.kernel.org/filesystems/tmpfs.html"
+},
+{
+"id": 125,
+"fact": "The Linux kernel implements splice() system call to transfer data directly between file descriptors without copying data to user space.",
+"category": "programming",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man2/splice.2.html"
+},
+{
+"id": 126,
+"fact": "Linux veth (virtual ethernet) devices act as connected pairs: packets sent into one end emerge at the opposite device end.",
+"category": "networking",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man4/veth.4.html"
+},
+{
+"id": 127,
+"fact": "The Linux kernel exposes system uptime in seconds via the /proc/uptime virtual file.",
+"category": "system",
+"status": "verified",
+"source": "https://docs.kernel.org/filesystems/proc.html"
+},
+{
+"id": 128,
+"fact": "Linux perf allows hardware performance counter monitoring, tracepoints, kprobes, and uprobes execution profiling.",
+"category": "debugging",
+"status": "verified",
+"source": "https://perf.wiki.kernel.org/"
+},
+{
+"id": 129,
+"fact": "The Linux 'sysctl' tool modifies kernel parameter configurations dynamically at runtime without requiring a kernel reboot.",
+"category": "kernel",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man8/sysctl.8.html"
+},
+{
+"id": 130,
+"fact": "SquashFS is a read-only compressed filesystem widely used for Linux live CDs, embedded devices, and container images.",
+"category": "filesystem",
+"status": "verified",
+"source": "https://docs.kernel.org/filesystems/squashfs.html"
+},
+{
+"id": 131,
+"fact": "Linux POSIX message queues allow asynchronous inter-process communication using structured messages with assigned priorities.",
+"category": "processes",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/mq_overview.7.html"
+},
+{
+"id": 132,
+"fact": "The kernel feature 'kexec' allows booting a new Linux kernel directly from a running kernel without undergoing hardware BIOS/UEFI resets.",
+"category": "boot",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man8/kexec.8.html"
+},
+{
+"id": 133,
+"fact": "Linux 'kdump' uses kexec to boot into a secondary rescue kernel to dump crash dumps (vmcore) when a primary kernel panic occurs.",
+"category": "debugging",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/kdump/kdump.html"
+},
+{
+"id": 134,
+"fact": "The Linux security framework PAM (Pluggable Authentication Modules) allows system administrators to customize authentication mechanisms without editing source code.",
+"category": "security",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man8/pam.8.html"
+},
+{
+"id": 135,
+"fact": "Linux system call numbers differ across CPU architectures (e.g., x86_64 system call IDs differ from ARM64 system call IDs).",
+"category": "kernel",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man2/syscall.2.html"
+},
+{
+"id": 136,
+"fact": "The inotify API provides mechanism for monitoring filesystem events such as file creation, modification, deletion, and movement.",
+"category": "filesystem",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/inotify.7.html"
+},
+{
+"id": 137,
+"fact": "fanotify is an advanced Linux filesystem notification API designed for malware scanning and hierarchical filesystem access monitoring.",
+"category": "security",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/fanotify.7.html"
+},
+{
+"id": 138,
+"fact": "Linux bridge virtual devices connect distinct Ethernet network segments together within software layer 2 forwarding.",
+"category": "networking",
+"status": "verified",
+"source": "https://docs.kernel.org/networking/bridge.html"
+},
+{
+"id": 139,
+"fact": "The Linux 'ip' command from iproute2 replaces legacy utilities like 'ifconfig', 'route', and 'arp'.",
+"category": "networking",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man8/ip.8.html"
+},
+{
+"id": 140,
+"fact": "The Filesystem Hierarchy Standard (FHS) specifies standard locations for files and directories across Linux operating systems.",
+"category": "basics",
+"status": "verified",
+"source": "https://refspecs.linuxfoundation.org/fhs.shtml"
+},
+{
+"id": 141,
+"fact": "The /var directory in the Filesystem Hierarchy Standard stores variable state data, including system logs, databases, and spool files.",
+"category": "filesystem",
+"status": "verified",
+"source": "https://refspecs.linuxfoundation.org/fhs.shtml"
+},
+{
+"id": 142,
+"fact": "The /opt directory is designated by FHS for storing add-on application software packages.",
+"category": "filesystem",
+"status": "verified",
+"source": "https://refspecs.linuxfoundation.org/fhs.shtml"
+},
+{
+"id": 143,
+"fact": "Linux dynamic linkers (ld.so) load required shared libraries (.so files) when launching dynamically linked binaries.",
+"category": "programming",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man8/ld.so.8.html"
+},
+{
+"id": 144,
+"fact": "The /etc/ld.so.conf configuration file and /etc/ld.so.cache binary index define search paths used by the dynamic linker.",
+"category": "programming",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man8/ldconfig.8.html"
+},
+{
+"id": 145,
+"fact": "The Linux kernel 'futex' (fast userspace mutex) provides fast locking by performing non-contended operations entirely in user space.",
+"category": "kernel",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man2/futex.2.html"
+},
+{
+"id": 146,
+"fact": "Linux namespaces were introduced incrementally, beginning with the mount namespace in Linux kernel version 2.4.19.",
+"category": "history",
+"status": "verified",
+"source": "https://lwn.net/Articles/531114/"
+},
+{
+"id": 147,
+"fact": "Linux supports Kernel Live Patching (KLP), enabling dynamic security fixes without restarting the core system kernel.",
+"category": "kernel",
+"status": "verified",
+"source": "https://docs.kernel.org/livepatch/livepatch.html"
+},
+{
+"id": 148,
+"fact": "The Linux audit framework collects security-relevant event records maintained by kernel audit subsystem hooks.",
+"category": "security",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/LSM/index.html"
+},
+{
+"id": 149,
+"fact": "The 'vmstat' command reports virtual memory statistics, CPU utilization, block I/O counts, and process activity snapshot summaries.",
+"category": "troubleshooting",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man8/vmstat.8.html"
+},
+{
+"id": 150,
+"fact": "The 'iostat' utility monitors system input/output device loading by observing active physical disk hardware times.",
+"category": "troubleshooting",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man1/iostat.1.html"
+},
+{
+"id": 151,
+"fact": "Linux implements virtual memory swapping via page-granularity operations rather than swapping entire process memory structures.",
+"category": "memory",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/mm/concepts.html"
+},
+{
+"id": 152,
+"fact": "In Linux filesystems, an inode stores metadata about a file (size, permissions, timestamps, block pointers) but does not store the file name.",
+"category": "filesystem",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/inode.7.html"
+},
+{
+"id": 153,
+"fact": "Directory entries in Linux (dentries) map file names to their corresponding inode numbers.",
+"category": "filesystem",
+"status": "verified",
+"source": "https://docs.kernel.org/filesystems/vfs.html"
+},
+{
+"id": 154,
+"fact": "Linux POSIX threads (NPTL - Native POSIX Thread Library) implement threads as task structs executed via the clone() system call.",
+"category": "processes",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/pthreads.7.html"
+},
+{
+"id": 155,
+"fact": "The clone() system call in Linux provides fine-grained control over what resources (memory, file descriptors, signal handlers) are shared between parent and child.",
+"category": "processes",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man2/clone.2.html"
+},
+{
+"id": 156,
+"fact": "Linux memory pages are typically 4KB in size on standard x86_64 architecture, though larger pages (2MB/1GB) are supported via HugeTLB.",
+"category": "memory",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/mm/hugetlbpage.html"
+},
+{
+"id": 157,
+"fact": "The /proc/sys/fs/file-max file controls the maximum total number of open file handles allowed across the entire Linux system.",
+"category": "kernel",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/sysctl/fs.html"
+},
+{
+"id": 158,
+"fact": "The ulimit command sets resource limits (open files, max processes, stack size) for the current shell and its child processes.",
+"category": "basics",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man1/bash.1.html"
+},
+{
+"id": 159,
+"fact": "PAM configuration files reside in /etc/pam.d/ and define authentication rules for system services like sshd, sudo, and login.",
+"category": "security",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man5/pam.conf.5.html"
+},
+{
+"id": 160,
+"fact": "Linux device major numbers identify the driver associated with a device, while minor numbers identify the specific device instance.",
+"category": "devices",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/devices.html"
+},
+{
+"id": 161,
+"fact": "Block devices transfer data in fixed-size blocks and support random access, whereas character devices stream data sequentially byte-by-byte.",
+"category": "devices",
+"status": "verified",
+"source": "https://docs.kernel.org/driver-api/"
+},
+{
+"id": 162,
+"fact": "Linux dm-crypt is a transparent disk encryption subsystem operating at the block device layer within the Linux kernel.",
+"category": "security",
+"status": "verified",
+"source": "https://docs.kernel.org/admin-guide/device-mapper/dm-crypt.html"
+},
+{
+"id": 163,
+"fact": "Logical Volume Manager (LVM) allows flexible disk management including resizing physical volumes, volume groups, and logical volumes on the fly.",
+"category": "filesystem",
+"status": "verified",
+"source": "https://sourceware.org/lvm2/"
+},
+{
+"id": 164,
+"fact": "Linux network namespaces can be managed directly using the 'ip netns' command utility.",
+"category": "networking",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man8/ip-netns.8.html"
+},
+{
+"id": 165,
+"fact": "The /proc/net directory provides symbolic links and virtual files giving detailed insights into network protocols and active sockets.",
+"category": "networking",
+"status": "verified",
+"source": "https://docs.kernel.org/filesystems/proc.html"
+},
+{
+"id": 166,
+"fact": "Linux 'ss' tool retrieves socket statistics and displays TCP, UDP, and domain socket connections faster than legacy 'netstat'.",
+"category": "networking",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man8/ss.8.html"
+},
+{
+"id": 167,
+"fact": "The Linux kernel implements TCP SYN cookies to mitigate TCP SYN flood denial-of-service attacks without allocating memory pools prematurely.",
+"category": "networking",
+"status": "verified",
+"source": "https://docs.kernel.org/networking/ip-sysctl.html"
+},
+{
+"id": 168,
+"fact": "Systemd targets replace traditional SysV init runlevels with declarative service grouping constructs.",
+"category": "boot",
+"status": "verified",
+"source": "https://systemd.io/"
+},
+{
+"id": 169,
+"fact": "Linux 'journalctl' inspects logs generated by systemd-journald using custom filters like unit, priority, or time ranges.",
+"category": "troubleshooting",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man1/journalctl.1.html"
+},
+{
+"id": 170,
+"fact": "The Linux kernel uses the anticipatory, deadline, or BFQ (Budget Fair Queueing) schedulers to manage disk block I/O requests.",
+"category": "kernel",
+"status": "verified",
+"source": "https://docs.kernel.org/block/index.html"
+},
+{
+"id": 171,
+"fact": "Linux pressure stall information (PSI) monitors CPU, memory, and I/O resource scarcity metrics in real time.",
+"category": "observability",
+"status": "verified",
+"source": "https://docs.kernel.org/accounting/psi.html"
+},
+{
+"id": 172,
+"fact": "The /sys/class directory organizes devices exposed by sysfs into functional categories such as net, block, sound, and power_supply.",
+"category": "devices",
+"status": "verified",
+"source": "https://www.kernel.org/doc/html/latest/driver-api/driver-model/overview.html"
+},
+{
+"id": 173,
+"fact": "Linux umask (user file-creation mode mask) subtracts default permissions when creating new files and directories.",
+"category": "security",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man2/umask.2.html"
+},
+{
+"id": 174,
+"fact": "Linux Access Control Lists (ACLs) provide fine-grained permissions beyond standard owner/group/other permission models.",
+"category": "security",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man5/acl.5.html"
+},
+{
+"id": 175,
+"fact": "The Linux 'getfacl' and 'setfacl' commands read and modify extended POSIX file access control entries.",
+"category": "security",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man1/setfacl.1.html"
+},
+{
+"id": 176,
+"fact": "Linux 'tar' (Tape Archiver) bundles multiple files into a single archive file without compressing unless combined with tools like gzip or xz.",
+"category": "basics",
+"status": "verified",
+"source": "https://www.gnu.org/software/tar/manual/"
+},
+{
+"id": 177,
+"fact": "The /proc/locks file lists all file locks currently held across the system by processes using flock or fcntl.",
+"category": "processes",
+"status": "verified",
+"source": "https://docs.kernel.org/filesystems/proc.html"
+},
+{
+"id": 178,
+"fact": "Linux supports user-space filesystems (FUSE), enabling non-privileged users to build virtual filesystems without compiling kernel code.",
+"category": "filesystem",
+"status": "verified",
+"source": "https://docs.kernel.org/filesystems/fuse.html"
+},
+{
+"id": 179,
+"fact": "The Linux core dump feature saves process memory contents to disk when a process terminates abnormally due to a crash signal.",
+"category": "debugging",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man5/core.5.html"
+},
+{
+"id": 180,
+"fact": "The /proc/sys/kernel/core_pattern file configures core dump output file naming conventions or piping behaviors.",
+"category": "debugging",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man5/core.5.html"
+},
+{
+"id": 181,
+"fact": "Linux 'chown' changes ownership of files or directories, while 'chgrp' specifically updates group ownership assignment.",
+"category": "basics",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man1/chown.1.html"
+},
+{
+"id": 182,
+"fact": "The /etc/passwd file stores local user account parameters including username, UID, primary GID, home directory, and login shell.",
+"category": "security",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man5/passwd.5.html"
+},
+{
+"id": 183,
+"fact": "The /etc/shadow file stores secure encrypted user password hashes inaccessible to non-privileged standard users.",
+"category": "security",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man5/shadow.5.html"
+},
+{
+"id": 184,
+"fact": "Linux supports Kernel Control Flow Integrity (CFI) to defend against indirect function call redirection attacks.",
+"category": "security",
+"status": "verified",
+"source": "https://docs.kernel.org/dev-tools/kcfi.html"
+},
+{
+"id": 185,
+"fact": "Linux System V IPC includes shared memory segments, semaphore sets, and message queues accessible via sysvipc syscalls.",
+"category": "processes",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/sysvipc.7.html"
+},
+{
+"id": 186,
+"fact": "POSIX shared memory (shm_open) creates shared memory regions exposed under the /dev/shm tmpfs virtual directory.",
+"category": "filesystem",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/shm_overview.7.html"
+},
+{
+"id": 187,
+"fact": "Linux supports namespaces for time isolation (CLONE_NEWTIME), allowing containers to set virtual offset system clocks.",
+"category": "containers",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/time_namespaces.7.html"
+},
+{
+"id": 188,
+"fact": "The /proc/cmdline file displays arguments passed from bootloaders to the Linux kernel during system initialization.",
+"category": "boot",
+"status": "verified",
+"source": "https://docs.kernel.org/filesystems/proc.html"
+},
+{
+"id": 189,
+"fact": "Linux 'tee' command reads from standard input and writes results simultaneously to both standard output and files.",
+"category": "basics",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man1/tee.1.html"
+},
+{
+"id": 190,
+"fact": "The Linux command 'xargs' builds and executes command lines using input arguments passed from standard input streams.",
+"category": "basics",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man1/xargs.1.html"
+},
+{
+"id": 191,
+"fact": "Linux security module AppArmor stores configuration profiles under /etc/apparmor.d/.",
+"category": "security",
+"status": "verified",
+"source": "https://gitlab.com/apparmor/apparmor/-/wikis/home"
+},
+{
+"id": 192,
+"fact": "Linux system call 'mmap' creates dynamic memory mappings in process address space backed by physical files or anonymous RAM.",
+"category": "memory",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man2/mmap.2.html"
+},
+{
+"id": 193,
+"fact": "The 'mprotect' system call sets or updates memory protection flags (READ, WRITE, EXECUTE) on mapped memory regions.",
+"category": "memory",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man2/mprotect.2.html"
+},
+{
+"id": 194,
+"fact": "Linux memory protection key (pkeys) support allows userland applications to change access permissions of memory pages without invoking context switches.",
+"category": "memory",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man7/pkeys.7.html"
+},
+{
+"id": 195,
+"fact": "Linux uses task structs to track all running tasks, managing process execution status, capabilities, memory maps, and open descriptors.",
+"category": "processes",
+"status": "verified",
+"source": "https://docs.kernel.org/scheduler/index.html"
+},
+{
+"id": 196,
+"fact": "Linux namespaces can be joined by external processes using the 'setns()' system call.",
+"category": "containers",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man2/setns.2.html"
+},
+{
+"id": 197,
+"fact": "The 'unshare()' system call allows a process to disassociate parts of its execution context without needing to fork a child process.",
+"category": "containers",
+"status": "verified",
+"source": "https://man7.org/linux/man-pages/man2/unshare.2.html"
+},
+{
+"id": 198,
+"fact": "Linux exposes kernel configuration options at runtime via /proc/config.gz when CONFIG_IKCONFIG_PROC is enabled.",
+"category": "kernel",
+"status": "verified",
+"source": "https://docs.kernel.org/filesystems/proc.html"
+},
+{
+"id": 199,
+"fact": "The Linux Landlock security module allows unprivileged processes to restrict their own file system access permissions securely.",
+"category": "security",
+"status": "verified",
+"source": "https://docs.kernel.org/security/landlock.html"
+},
+{
+"id": 200,
+"fact": "The Linux kernel version naming scheme uses a version number format of Major.Minor.Patch (e.g., 6.6.12).",
+"category": "kernel",
+"status": "verified",
+"source": "https://www.kernel.org/doc/html/latest/process/releases.html"
+}
+]

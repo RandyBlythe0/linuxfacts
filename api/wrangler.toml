@@ -1,0 +1,11 @@
+name = "linuxfacts-api"
+main = "src/index.ts"
+compatibility_date = "2024-11-12"
+
+# Uncomment and configure routes/custom domains for production
+# routes = [
+#   { pattern = "api.linuxfacts.com", custom_domain = true }
+# ]
+
+[observability]
+enabled = true

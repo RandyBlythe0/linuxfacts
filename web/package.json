@@ -1,0 +1,9 @@
+{
+  "name": "linuxfacts-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx serve .",
+    "preview": "npx serve ."
+  }
+}
