@@ -1,6 +1,6 @@
 // Base URL for the linuxfacts API.
-// For local development with `wrangler dev`, this defaults to localhost:8787.
-// Update this to your deployed Worker URL in production (e.g. https://api.linuxfacts.com).
+// For local development with `wrangler dev`, use http://localhost:8787.
+// Production Worker URL:
 window.LINUXFACTS_CONFIG = {
-  API_BASE_URL: "http://localhost:8787"
+  API_BASE_URL: "https://api.linuxfacts.com"
 };
