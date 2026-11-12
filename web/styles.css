@@ -53,8 +53,8 @@ h1 { font-size: clamp(2rem, 4vw, 3rem); margin: 0 0 12px; line-height: 1.1; }
 .fact-id { color: var(--muted); font-size: 0.9rem; }
 .fact-text { font-size: 1.35rem; line-height: 1.5; margin: 0 0 12px; }
 .fact-meta { color: var(--muted); margin: 0 0 8px; text-transform: capitalize; }
-.fact-source { margin: 0 0 18px; color: var(--muted); font-size: 0.95rem; }
-.fact-source a { color: var(--accent); text-decoration: none; }
+.fact-source { margin: 0 0 18px; color: var(--muted); font-size: 0.95rem; overflow-wrap: anywhere; word-break: break-word; }
+.fact-source a { color: var(--accent); text-decoration: none; overflow-wrap: anywhere; word-break: break-word; }
 .fact-source a:hover { text-decoration: underline; }
 .error { color: var(--error); margin: 0 0 12px; }
 
@@ -87,7 +87,8 @@ button:disabled { opacity: 0.6; cursor: not-allowed; }
   padding: 14px 16px;
   color: var(--text);
 }
-#facts-list .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 6px; text-transform: capitalize; }
+#facts-list .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 6px; text-transform: capitalize; overflow-wrap: anywhere; word-break: break-word; }
+#facts-list a { overflow-wrap: anywhere; word-break: break-word; }
 
 .footer { margin-top: 28px; color: var(--muted); font-size: 0.95rem; }
 code { color: var(--text); }
